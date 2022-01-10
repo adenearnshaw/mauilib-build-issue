@@ -14,19 +14,26 @@ When creating a new MauiLib project standalone, and trying to reference a Platfo
 
 ![Image showing Build Error](/assets/BuildError.png)
 
-
 ## Expected
 
 I should be able to create a 'net6.0' only version of PlatformClass1.cs that follows the same pattern as the other Platform specific classes
 
 ## Things I've tried
 
-In the old .net-sdk-extras method, you'd specify a version specific to .Net only, however, as suggested by Allan Ritchie to manually modify the csproj, this seems to be ignored.
+In the old .net-sdk-extras implementation, you'd specify a version specific to .Net only, however, as suggested by Allan Ritchie to manually modify the csproj, this seems to be ignored.
 
 The Maui Essentials works, because the port from Xamarin Essentials still uses the very manual way of explitily suffixing each file.
 
+
+I've tried looking for the code for the SingleProject MSIX extension to see if there's any other valid Platform folders that would resolve the issue, but I've not been able to find that.
+
 ## Using
 
-Maui Preview 11
-VS2022 Preview 2
-Single-project MSIX 0.9.10.2111041
+- Maui Preview 11  
+- VS2022 Preview 2  
+- Single-project MSIX 0.9.10.2111041  
+
+
+I appreciate things are still in Preview so this is more about trying to discover if there's missing functionality, missing docs, or something else.
+
+Thanks for looking
